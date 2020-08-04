@@ -35,7 +35,7 @@ def requestMoney(person_request, amount = 0.01, note=""):
             print(bcolors.OKBLUE + "id: " + bcolors.ENDC + bcolors.WARNING + user.id + bcolors.ENDC)
             # Request Money
             print("Sending Request ... ", end="")
-            # venmo.payment.request_money(amount, note, user.id)
+            venmo.payment.request_money(amount, note, user.id)
             print(bcolors.OKGREEN + "Request sent" + bcolors.ENDC)
     if not found_user:
         print( bcolors.FAIL + "Error: No User Found" + bcolors.ENDC)
@@ -55,7 +55,7 @@ def sendMoney(person_request, amount = 0.01, note=""):
             print(bcolors.OKBLUE + "id: " + bcolors.ENDC + bcolors.WARNING + user.id + bcolors.ENDC)
             # Send Money
             print("Sending Money ... ", end="")
-            # venmo.payment.send_money(amount, note, user.id)
+            venmo.payment.send_money(amount, note, user.id)
             print(bcolors.OKGREEN + "Transaction Complete" + bcolors.ENDC)
     if not found_user:
         print( bcolors.FAIL + "Error: No User Found" + bcolors.ENDC)
