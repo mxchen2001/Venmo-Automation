@@ -1,0 +1,8 @@
+__pycache__
+.vscode
+.DS_Store
+*.pyc
+access_token.txt
+~$*
+Google\ Sheets\ (no\ functional,\ work\ in\ progress)
+Google\ Sheets\ (no\ functional,\ work\ in\ progress)/*
