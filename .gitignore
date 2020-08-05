@@ -4,5 +4,7 @@ __pycache__
 *.pyc
 access_token.txt
 ~$*
+node_modules
+node_modules/*
 Google\ Sheets\ (no\ functional,\ work\ in\ progress)
 Google\ Sheets\ (no\ functional,\ work\ in\ progress)/*

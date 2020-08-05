@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('../../assets/images/liquid_bubbles_blue.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-form {
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    border-radius: 15px;
+    width: 500px;
+    padding: 40px;
+    background: #F0FFFF;
+    opacity: 1;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: #1F89F8;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ffffff;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+.box h1 {
+    color: black;
+    font-weight: 500
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 300px;
+}
+
+.box input:focus::placeholder {
+    color: transparent;
+}
+
+.box input[type="submit"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    border: 2px solid #1F89F8;
+    outline: #1F89F8;
+    color: #1F89F8;
+}
+
+.box button{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    border: 2px solid #1F89F8;
+    outline: #1F89F8;
+    color: #1F89F8;
+}
+
+.box input::placeholder {
+    color: white;
+}
+
+.box input[type="submit"]:hover {
+    background: #1F89F8;
+    color: white;
+    border-radius: 10px
+}
+
+.box button:hover {
+    background: #1F89F8;
+    color: white;
+    border-radius: 10px
+}
+
+.box .logout {
+    border: 2px solid #df3148;
+    outline: #df3148;
+    color: #df3148;
+}
+
+.box .logout:hover {
+    background: #df3148;
+    color: white;
+    border-radius: 10px
+}
+
+.forgot {
+    text-decoration: underline
+}

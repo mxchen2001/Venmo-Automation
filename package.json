@@ -1,0 +1,27 @@
+{
+  "name": "venmo-automation-desktop",
+  "version": "1.0.0",
+  "description": "Venmo Excel Parser Desktop Interface",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxchen2001/Venmo-Automation.git"
+  },
+  "author": "Xige Michael Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mxchen2001/Venmo-Automation"
+  },
+  "homepage": "https://github.com/mxchen2001/Venmo-Automation",
+  "devDependencies": {
+    "electron": "^9.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "express": "^4.17.1"
+  }
+}

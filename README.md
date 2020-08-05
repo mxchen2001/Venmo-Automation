@@ -62,3 +62,8 @@ python logout.py
 ```
 Your access token never expires! Running `python logout.py` will revoke your token and delete it off your local machine
 
+## NPM installs
+
+```bash
+npm start
+```

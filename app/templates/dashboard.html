@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>AAK Telescience</title>
+	<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/dashboard.css" />
+	<script src="../js/dashboard.js"></script>
+
+</head>
+
+<body>
+	<section class="dashboard">
+		<div class="box" id="main">
+			<!-- Header -->
+			<h1 id="name"></h1>
+			<h3 id ="lab"></h3>
+			<hr style="text-align:left; margin-left:0; margin-top: 4px; border-width:2px">
+
+			<!-- Description -->
+			<div class="row col-sm-12">
+				<strong>Description</strong>
+			</div>
+			<div class="row col-sm-12">
+				<p class="" id="description"></p>
+			</div>
+
+			<br>
+
+			<!-- Keywords -->
+			<div class="row col-sm-12">
+				<strong>Keywords</strong>
+			</div>
+			<div class="row col-sm-12">
+				<p class="text-capitalize" id="keywords"></p>
+			</div>
+
+			<br>
+
+			<!-- Website -->
+			<div class="row col-sm-12">
+				<strong>Website</strong>
+			</div>
+			<div class="row col-sm-12">
+				<a class="" id="website"></a>
+			</div>
+
+			<br>
+
+			<!-- Upload files and logout -->
+			<form>
+				<button class="mr-3 button upload" formaction="./upload_files.html" style="display:inline-block">Upload Files</button>
+				
+				<button class="button logout" formaction="./index.html" onclick=clearToken(); style="display:inline-block;">Logout</button>
+				<script>
+					function clearToken () { // clears authentication token
+						const fs = require('fs');
+						fs.truncate('token.txt', 0, function(){console.log('done')})
+					}
+				</script>
+			</form>
+		</div>
+	</section>
+</body>
+
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', function () {
+		var result = document.getElementById("main").offsetHeight;
+		let boxHeight = result.toString() + 'px';
+		// document.getElementById("side-nav").style.height = boxHeight;
+	}, false);
+</script>
+
+</html>
