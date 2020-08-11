@@ -108,11 +108,9 @@ You will have 3 buttons
 
 ### What the Buttons do
 - Upload File - upload an xlsx or excel file with the following format
+![Spreadsheet](assets/images/spreadsheet_template.png )
 
-    > |Username|Amount|Note|Type|
-    > |--------|-----:|----|----|
-    > |UniqueUser01| 0.01| A note for this transaction| "r" or "R" for request
-    > |UniqueUser02| 0.01| A note for this other transaction| "s" or "S" for send
+
 
 - Send to Venmo - After the file is uploaded, click "Send to Venmo" to submit the request
 - Logout - The  **Access Token never expires**, if you want to **use the app without signing in again just close the app**, otherwise logout to delete and revoke the access token
