@@ -12,7 +12,7 @@ pip -V
 ```
 
 ## Installation
-You can run this project directly from your terminal by cloning this repository and running it in the latest version of Xcode 11.6 
+You can run this project directly from your terminal by cloning this repository and running it through your command line
 ```bash
 # install 
 
