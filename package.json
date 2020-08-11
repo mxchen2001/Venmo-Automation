@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "package-win": "electron-packager . venmo-automation-desktop --overwrite --no-asar --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=AAK --version-string.FileDescription=mxchen --version-string.ProductName=\"Venmo Excel\"",
-    "package-mac": "electron-packager . venmo-automation-desktop --overwrite --no-asar --platform=darwin --arch=x64 --prune=true --out=release-builds --version-string.CompanyName=AAK --version-string.FileDescription=mxchen --version-string.ProductName=\"Venmo Excel\""
+    "package-win": "electron-packager . venmo-automation-desktop --overwrite --no-asar --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=mxchen --version-string.FileDescription=mxchen --version-string.ProductName=\"Venmo Excel\"",
+    "package-mac": "electron-packager . venmo-automation-desktop --overwrite --no-asar --platform=darwin --arch=x64 --prune=true --out=release-builds --version-string.CompanyName=mxchen --version-string.FileDescription=mxchen --version-string.ProductName=\"Venmo Excel\""
   },
   "repository": {
     "type": "git",

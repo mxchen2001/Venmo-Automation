@@ -91,15 +91,29 @@ node build.js
 ```
 ## 4) How to use the app
 
-Get and access token through the link in the login page and copy and paste the access token into the app. You will have 3 buttons
+Paste your access token into the field
 
+![Login Screen](assets/images/login_screen.png )
+
+Click on __Get Access Token__
+![Venmo Sign In](assets/images/get_access_token.png )
+
+After a successful login
+![Access Token](assets/images/successful_login.png )
+
+Get and access token through the link in the login page and copy and paste the access token into the app. 
+You will have 3 buttons
+
+![Dashboard](assets/images/dashboard.png )
+
+### What the Buttons do
 - Upload File - upload an xlsx or excel file with the following format
 
     > |Username|Amount|Note|Type|
     > |--------|-----:|----|----|
     > |UniqueUser01| 0.01| A note for this transaction| "r" or "R" for request
     > |UniqueUser02| 0.01| A note for this other transaction| "s" or "S" for send
-    
+
 - Send to Venmo - After the file is uploaded, click "Send to Venmo" to submit the request
 - Logout - The  **Access Token never expires**, if you want to **use the app without signing in again just close the app**, otherwise logout to delete and revoke the access token
 

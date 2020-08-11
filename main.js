@@ -20,21 +20,21 @@ const template = [
       ]
     }] : []),
     // { role: 'Dev-Mode' }
-    {
-        label: 'Debug (Dev-Mode)',
-        submenu: [
-            { role: 'reload' },
-            { role: 'forcereload' },
-            { role: 'toggledevtools' },
-            {
-                label: 'Launch Website',
-                click: async () => {
-                  const { shell } = require('electron')
-                  await shell.openExternal('http://localhost:5000/')
-                }
-            }
-        ]
-    },
+    // {
+    //     label: 'Debug (Dev-Mode)',
+    //     submenu: [
+    //         { role: 'reload' },
+    //         { role: 'forcereload' },
+    //         { role: 'toggledevtools' },
+    //         {
+    //             label: 'Launch Website',
+    //             click: async () => {
+    //               const { shell } = require('electron')
+    //               await shell.openExternal('http://localhost:5000/')
+    //             }
+    //         }
+    //     ]
+    // },
     // { role: 'fileMenu' }
     {
       label: 'File',
@@ -121,7 +121,7 @@ function createWindow () {
     // Create browser window
     let win = new BrowserWindow({
         // Larger for DevTools
-        width: 1700,
+        width: 1000,
         height: 800,
         webPreferences: {
             nodeIntegration: true
@@ -137,7 +137,7 @@ function createWindow () {
     Menu.setApplicationMenu(mainMenu);
 
     // Open with DevTools. 
-    win.webContents.openDevTools() 
+    // win.webContents.openDevTools() 
 }
 
 app.on('ready', createWindow);
