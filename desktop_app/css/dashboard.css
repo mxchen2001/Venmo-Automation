@@ -2,7 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-image: url('../../assets/images/liquid_bubbles_blue.jpg');
+    /* background-image: url('../../assets/images/liquid_bubbles_blue.jpg'); */
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -18,31 +20,22 @@ body {
 }
 
 .box {
-    border-radius: 15px;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #80818C;
     width: 800px;
     max-height: 600px;
     padding: 40px;
     background: #F0FFFF;
     opacity: 1;
-    text-align: center;
+    text-align: left;
     transition: 0.25s;
     overflow: auto;
 }
 
 .box h1 {
-    color: black;
+    color: #595a63;
     font-weight: 500
-}
-
-.box .button {
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    padding: 14px 40px;
-    border-radius: 24px;
-    transition: 0.25s;
-    cursor: pointer
 }
 
 .box input[type="text"],
@@ -94,17 +87,44 @@ body {
     border-radius: 10px
 }
 
+.box .button {
+    background: none;
+    display: block;
+    margin: 20px;
+    text-align: center;
+    padding: 14px 40px;
+    border-radius: 9px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
 .box .upload {
-    border: 2px solid #1F89F8;
-    outline: #1F89F8;
-    color: #1F89F8;
+    border: 2px solid #1F7EF5;
+    outline: #1F7EF5;
+    color: #1F7EF5;
 }
 
 .box .upload:hover {
-    background: #1F89F8;
+    background: #1F7EF5;
     color: white;
-    border-radius: 10px
+    border-radius: 11px
 }
+
+.box .send {
+    border: 2px solid #6782B4;
+    outline: #6782B4;
+    color: #6782B4;
+}
+
+.box .send:hover {
+    background: #6782B4;
+    color: white;
+    border-radius: 11px
+}
+
+.box .send:active{
+    background: #485a7e;
+    color: white;}
 
 .box .logout {
     border: 2px solid #df3148;
@@ -115,57 +135,10 @@ body {
 .box .logout:hover {
     background: #df3148;
     color: white;
-    border-radius: 10px
+    border-radius: 11px
 }
 
-.keyword-box{
-    min-height: 0px;
-    max-height: 200px;
-    width: 720px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #1F89F8;
-    border-radius: 10px;
-    padding: 40px;
-    background: #c6f8f8;
-    opacity: 1;
-    text-align: center;
-    transition: 0.25s;
-    overflow: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-.keyword-bubble{
-    background: #F0FFFF;
-    font-size: 15px;
-    display: block;
-    margin: -10px auto;
-    text-align: center;
-    padding: 5px 20px;
-    border-radius: 24px;
-    transition: 0.25s;
-    cursor: pointer;
-    border: 2px solid #1F89F8;
-    outline: #1F89F8;
-    color: #1F89F8;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-input:checked + .keyword-bubble {
-    background-color: #1F89F8;
-    color: #F0FFFF;
-    padding: 5px 25px;
+.box .logout:active{
+    background: #bb4454;
+    color: white;
 }

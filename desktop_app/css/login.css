@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background-image: url('../../assets/images/liquid_bubbles_blue.jpg'); */
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-form {
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #80818C;
+    width: 500px;
+    max-height: 600px;
+    padding: 40px;
+    background: #F0FFFF;
+    opacity: .95;
+    text-align: center;
+    transition: 0.25s;
+    overflow: auto;
+}
+
+.box h1 {
+    color: #595a63;
+    font-weight: 500
+}
+
+.box input[type="text"]{
+    border: 0;
+    background: #1F7EF5;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ffffff;
+    padding: 10px 10px;
+    width: 350px;
+    outline: none;
+    color: black;
+    border-radius: 12px;
+    transition: 0.25s
+}
+
+.box input[type="text"]:focus{
+    width: 400px;
+}
+
+.box input::placeholder {
+    color: white;
+}
+
+.box input:focus::placeholder {
+    color: transparent;
+}
+
+.box input[type="submit"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 12px;
+    transition: 0.25s;
+    cursor: pointer;
+    border: 2px solid #6782B4;
+    outline: #6782B4;
+    color: #6782B4;
+}
+
+.box input[type="submit"]:hover {
+    background: #6782B4;
+    color: white;
+    border-radius: 15px
+}
+
+.box .button {
+    background: none;
+    display: block;
+    margin: 20px;
+    text-align: center;
+    padding: 14px 40px;
+    border-radius: 9px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.box .upload {
+    border: 2px solid #57a8ff;
+    outline: #57a8ff;
+    color: #57a8ff;
+}
+
+.box .upload:hover {
+    background: #57a8ff;
+    color: white;
+    border-radius: 11px
+}
+
+.box .upload:active{
+    background: #0c5fb8;
+    color: white;
+}
+
+.box .send {
+    border: 2px solid #6782B4;
+    outline: #6782B4;
+    color: #6782B4;
+}
+
+.box .send:hover {
+    background: #6782B4;
+    color: white;
+    border-radius: 11px
+}
+
+.box .send:active{
+    background: #485a7e;
+    color: white;}
+
+.box .logout {
+    border: 2px solid #df3148;
+    outline: #df3148;
+    color: #df3148;
+}
+
+.box .logout:hover {
+    background: #df3148;
+    color: white;
+    border-radius: 11px
+}
+
+.box .logout:active{
+    background: #bb4454;
+    color: white;
+}
+
+.forgot {
+    text-decoration: underline
+}

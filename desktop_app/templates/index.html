@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Venmo Automation</title>
+	<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/login.css" />
+	<script defer src="../js/checkLoginStatus.js"></script>
+	<script defer src="../js/login.js"></script>
+</head>
+<body>
+	<section class="login-form">
+		<form class="box">
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="../../assets/images/venmo_V.png" alt="venmo logo" style="border-radius: 24px; width: 100px;">	
+				</div>
+				<div class="col-sm-9" align="left">
+					<h1 style="color: #595a63; padding-top: 25px;">Login to Venmo</h1>
+				</div>
+			</div>
+			<div style="padding: 30px;"></div>
+			<p class="text-muted">Please enter your Access Token and Device ID below!</p>
+			<input class="text-white" type="text" id="access_token" name="" value = "" placeholder="Access Token"/>
+			Don't have an Access Token,
+			<a target="_blank" rel="noopener noreferrer" href="https://api.venmo.com/v1/oauth/authorize?client_id=1112&scope=access_profile,make_payments&response_type=code">Get Access Token</a>
+			here.
+			<input type="submit" name="" value="Login" onclick="venmoLogin(); return false;"/>
+			<p class="text-danger" id="loginInvalid" style="display: none;">Your access token is expired or invalid.</p>
+			<p class="text-danger" id="loginEmpty" style="display: none;">Your access token cannot be empty. Please try again.</p>
+			<br>
+			<img src="../../assets/images/info_button.png" alt="Girl in a jacket" width="15" height="20"
+				style="padding-bottom: 4px;">
+			
+
+			<!-- Browser Versions -->
+			Versions:
+			<script>
+				document.write(process.versions.node) 
+			</script>, Chrome
+			<script>
+				document.write(process.versions.chrome) 
+			</script>, and Electron
+			<script>
+				document.write(process.versions.electron) 
+			</script>.
+		</form>
+	</section>
+</body>
+
+</html>

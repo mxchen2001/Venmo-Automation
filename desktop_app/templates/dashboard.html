@@ -1,0 +1,54 @@
+<!-- upload_files.html -->
+<!-- upload files page -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AAK Telescience</title>
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/dashboard.css" />
+  <!-- https://electronjs.org/docs/tutorial 
+                           /security#csp-meta-tag -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <script defer src="../js/login.js"></script>
+  <script defer src="../js/upload.js"></script>
+  <script defer src="../js/submitToVenmo.js"></script>
+
+</head>
+
+<body>
+  <section class="dashboard">
+    <div class="box">
+      <h1>Upload a File</h1>
+      <h3>Choose a File to Upload</h3>
+      <p class="text-muted">Please choose a .xlsx (excel) file</p>
+      <br>
+      <p id="fileName"></p>
+      <button class="button upload" id="uploadToVenmo" style="padding: 5px 25px">Upload File</button>
+      <button class="button send" onclick="sendToVenmo()" style="padding: 5px 10px">Send to Venmo</button>
+      <button class="button logout" onclick="venmoLogout()" style="padding: 5px 40px">Logout</button>
+
+      <div id="consoleOut">
+      </div>
+
+      <br>
+
+
+
+      <img src="../../assets/images/info_button.png" alt="Girl in a jacket" width="15" height="18"
+        style="padding-bottom: 2px;">
+      Versions:
+      <script>
+        document.write(process.versions.node) 
+      </script>, Chrome
+      <script>
+        document.write(process.versions.chrome) 
+      </script>, and Electron
+      <script>
+        document.write(process.versions.electron) 
+      </script>.
+    </div>
+  </section>
+</body>
+
+</html>

@@ -128,7 +128,7 @@ function createWindow () {
         }
     });
 
-    win.loadFile(path.join(__dirname, 'app/templates/index.html'));
+    win.loadFile(path.join(__dirname, 'desktop_app/templates/index.html'));
 
     // Build Menu
     const mainMenu = Menu.buildFromTemplate(template);
