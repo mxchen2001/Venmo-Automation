@@ -8,3 +8,4 @@ release-builds/
 assets/uploaded_files/*
 node_modules
 node_modules/*
+assets/static/*
