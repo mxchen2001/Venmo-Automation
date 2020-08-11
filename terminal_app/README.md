@@ -47,6 +47,12 @@ There are four inputs that you need to setup before running the script. Make sur
 - Note: No restrictions
 - Type: Either "R" or "r" for **Request** or "S" or "s" for **Send**
 
+TLDR; Format the Spreadsheet to look like
+> |Username|Amount|Note|Type|
+> |--------|-----:|----|----|
+> |UniqueUser01| 0.01| A note for this transaction| "r" or "R" for request
+> |UniqueUser02| 0.01| A note for this other transaction| "s" or "S" for send
+
 ## Running the Spreadsheet Parser
 Set up your Venmo Authentication Token by running:
 ```bash
@@ -61,9 +67,3 @@ Your access token will be stored in `access_token.txt`, **MAKE SURE TO RUN:**
 python logout.py
 ```
 Your access token never expires! Running `python logout.py` will revoke your token and delete it off your local machine
-
-## NPM installs
-
-```bash
-npm start
-```
