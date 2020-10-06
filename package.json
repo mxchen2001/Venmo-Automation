@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/mxchen2001/Venmo-Automation",
   "devDependencies": {
-    "electron": "^9.1.1",
+    "electron": "^9.3.0",
     "electron-squirrel-startup": "^1.0.0"
   },
   "dependencies": {
